@@ -30,7 +30,7 @@ public class Main {
 			switch (combustivel) {
 			
 			case 1:
-				alcool += alcool;
+				alcool = alcool + 1;
 				
 				System.out.println("Abastecido Alcool.");
 	
@@ -42,7 +42,7 @@ public class Main {
 				
 				System.out.println("Abastecido Gasolina.");
 				
-				gasolina += gasolina;
+				gasolina = gasolina + 1;
 				
 				combustivel = sc.nextInt();
 				
@@ -52,7 +52,7 @@ public class Main {
 				
 				System.out.println("Abastecido Diesel.");
 				
-				diesel += diesel;
+				diesel = diesel + 1;
 				
 				combustivel = sc.nextInt();
 				
@@ -68,6 +68,8 @@ public class Main {
 				System.out.println("");
 				System.out.printf("Carros abastecidos com diesel: %d", diesel);
 				System.out.println("");
+				
+				break;
 		
 			default:
 				
@@ -77,5 +79,6 @@ public class Main {
 
 			}			
 		}
+		sc.close();
 	}
 }
